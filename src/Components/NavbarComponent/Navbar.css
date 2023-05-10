@@ -1,0 +1,50 @@
+.navBar{
+    background-color: black;
+    height: 120px;
+}
+
+.logo{
+    width: 83px;
+    height: 63px;
+}
+
+.nav-link{
+    color: white;
+}
+
+.nav-link:hover{
+    color: grey;
+}
+
+.nav-link:focus{
+    color: grey;
+}
+
+.me-auto.navbar-nav{
+    margin: 0 !important;
+    margin-left: auto !important;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar-toggler.collapsed{
+    background-color: white;
+}
+
+.navbar-toggler{
+    background-color: white;
+}
+
+@media screen and (max-width: 991px){
+    .navBar{
+        height: auto;
+    }
+    
+    a.nav-link{
+        display: flex;
+        justify-content: center;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    
+}

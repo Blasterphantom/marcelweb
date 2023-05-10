@@ -1,0 +1,96 @@
+@font-face {
+    font-family: Raleway;
+    src: url(../../Assets/Raleway/Raleway-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Avenir;
+    src: url(../../Assets/AvenirLight/Avenir-Light.ttf);
+}
+
+.aboutMe{
+    height: 740px;
+    width: auto;
+    background-image: url(../../Assets/luffy.jpeg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titleAbout{
+    font-size: 40px;
+    font-family: Raleway;
+    width: auto;
+    height: 47px;
+    color: white;
+    margin: 0;
+    padding: 0;
+    margin-top: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subTitleAbout{
+    font-family: Avenir;
+    font-size: 16px;
+    width: auto;
+    height: 31.5px;
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.paragraphAbout{
+    font-family: Avenir;
+    font-size: 15px;
+    text-align: center;
+    color: white;
+    width: 530px;
+    height: auto;
+    margin: 0;
+    line-height: 1.88;
+}
+
+.paragraphAboutDiv{
+    width: 100%;
+    display: flex;
+    padding-top: 10.5%;
+    padding-left: 10%;
+}
+
+@media screen and (max-width: 768px){
+    .paragraphAbout{
+        width: 300px;
+    }
+
+    .aboutMe{
+        height: 1000px;
+    }
+}
+
+@media screen and (max-width: 425px){
+    .paragraphAbout{
+        width: 300px;
+    }
+
+    .titleAbout{
+        margin-top: 10px;
+    }
+
+    .paragraphAboutDiv{
+        width: 100%;
+        display: flex;
+        padding-top: 5%;
+        padding-left: 0;
+        display: flex;
+        justify-content: center;
+    }
+}

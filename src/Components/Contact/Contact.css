@@ -1,0 +1,105 @@
+@font-face {
+    font-family: Raleway;
+    src: url(../../Assets/Raleway/Raleway-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Avenir;
+    src: url(../../Assets/AvenirLight/Avenir-Light.ttf);
+}
+
+.contactDiv{
+    height: 740px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.infoDiv{
+    background-color: rgb(25, 25, 25);
+    height: 500px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gomu{
+    background-image: url(../../Assets/gomu.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    width: 500px;
+}
+
+.contactTitle{
+    margin-top: 27%;
+    margin-bottom: 4.5%;
+    width: auto;
+    height: 54px;
+    color: white;
+    font-family: Raleway;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.city{
+    font-family: Avenir;
+    width: auto;
+    font-size: 15px;
+    color: white;
+    margin: 0;
+    height: 53px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4.5%;
+}
+
+.contactEmail{
+    font-family: Avenir;
+    width: auto;
+    font-size: 15px;
+    color: white;
+    margin: 0;
+    height: 28.13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4.5%;
+}
+
+@media screen and (max-width: 1023px){
+    .contactDiv{
+        display: flex;
+        flex-direction: column;
+        height: 1050px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .contactDiv{
+        height: auto;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .infoDiv{
+        height: 300px;
+        width: 300px;
+    }
+    
+    .gomu{
+        height: 300px;
+        width: 300px;
+    }
+
+    .contactTitle{
+        margin-top: 14%;
+    }
+}

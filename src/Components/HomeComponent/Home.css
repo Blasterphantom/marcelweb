@@ -1,0 +1,387 @@
+@font-face {
+    font-family: Raleway;
+    src: url(../../Assets/Raleway/Raleway-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Avenir;
+    src: url(../../Assets/AvenirLight/Avenir-Light.ttf);
+}
+
+.homeContainer.container{
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.strawHat{
+    width: 65%;
+}
+
+#hero1{
+    background-image: url("../../Assets/hat.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+#hero2{
+    background-image: url("../../Assets/marcelDesk.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+#hero3{
+    background-image: url("../../Assets/beach.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.carousel-item{
+    background-size: cover;
+    height: calc(100vh - 120px);
+    display: relative;
+}
+
+.titleTxt{
+    font-family: Raleway;
+    font-size: 68px;
+}
+
+.titleTxt2{
+    font-family: Raleway;
+    font-size: 68px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 12px;
+}
+
+.titleTxt3{
+    font-family: Raleway;
+    font-size: 68px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 12px;
+    color: rgba(0, 0, 0, 1);
+}
+
+.portfolioTitle{
+    font-family: Avenir;
+    margin: 0;
+    padding-top: 75px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+    color: white;
+    font-size: 20px;
+}
+
+.portfolioTxt{
+    font-family: Avenir;
+    margin: 0;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.langRow.row{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+}
+
+.logoSize{
+    width: auto;
+    height: 64px;
+    margin: 0;
+    padding: 0;
+    margin: 15px;
+}
+
+.learnMoreBtn{
+    font-family: Avenir;
+    background-color: rgba(0, 0, 0, 0) !important;
+    border: none;
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    border-radius: 8px;
+    width: 150px;
+}
+
+.learnMoreBtn:hover{
+    font-family: Avenir;
+    background-color: rgba(0, 0, 0, 0) !important;
+    border: none;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    width: 150px;
+}
+
+.learnMoreBtn:focus{
+    font-family: Avenir;
+    background-color: rgba(0, 0, 0, 0) !important;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    border: none;
+    width: 150px;
+}
+
+.rowLearn.row{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+
+.projectDiv{
+    background-color: #1692CC;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projectTxt{
+    font-family: Raleway;
+    margin: 0;
+    padding: 0;
+    font-size: 68px;
+    color: white;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.project1{
+    margin: 0;
+    padding: 0;
+    height: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 17%;
+    padding-right: 17%;
+}
+
+.pokemonPic{
+    width: 267px;
+    height: 277px;
+    padding: 0;
+}
+
+.pokeTitle{
+    font-family: Raleway;
+    width: 347px;
+    margin: 0;
+    padding: 0;
+    font-size: 50px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.pokePara{
+    margin: 0;
+    padding: 0;
+    width: 347px;
+    color: white;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.pokeLink{
+    margin: 0;
+    padding: 0;
+    width: 347px;
+    color: white;
+    font-size: 16px;
+}
+
+.weatherPic{
+    width: 347px;
+    height: 276px;
+    padding: 0;
+}
+
+.weatherTitle{
+    font-family: Raleway;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    font-size: 50px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.weatherPara{
+    margin: 0;
+    padding: 0;
+    width: 347px;
+    color: white;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.weatherLink{
+    margin: 0;
+    padding: 0;
+    width: 347px;
+    color: white;
+    font-size: 16px;
+}
+
+.SerenityPic{
+    width: 349px;
+    height: 255px;
+    padding: 0;
+}
+
+.colHa{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    padding: 0;
+}
+
+
+@media screen and (max-width: 1100px){
+    .project1{
+        height: auto;
+        flex-direction: column;
+        padding-bottom: 100px;
+    }
+
+    .project2{
+        flex-direction: column-reverse;
+    }
+
+    .center{
+        text-align: center;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 991px){
+    .carousel-item{
+        /* height: calc(100vh - 73px); */
+        height: 400px !important;
+    }
+
+    #hero1{
+        height: 100%;
+    }
+    
+    #hero2{
+        height: 100%;
+    }
+    
+    #hero3{
+        height: 100%;
+    }
+    
+}
+
+@media screen and (max-width: 768px){
+    .titleTxt{
+        font-size: 22px;
+    }
+    
+    .titleTxt2{
+        font-size: 22px;
+        background-color: rgba(0, 0, 0, 0.7);
+        border-radius: 12px;
+    }
+    
+    .titleTxt3{
+        font-size: 22px;
+        background-color: rgba(255, 255, 255, 0.4);
+        border-radius: 12px;
+    }
+}
+
+@media screen and (max-width: 425px){
+    .carousel-item{
+        /* height: calc(100vh - 73px); */
+        height: 300px !important;
+    }
+
+    .portfolioTitle{
+        margin: 0;
+        padding-top: 75px;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 40px;
+        color: white;
+        font-size: 20px;
+    }
+    
+    .portfolioTxt{
+        margin: 0;
+        color: white;
+        font-size: 15px;
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 150px;
+    }
+
+    .pokeTitle{
+        width: auto;
+    }
+    
+    .pokePara{
+        width: auto;
+    }
+    
+    .pokeLink{
+        width: auto;
+        font-size: 12px;
+    }
+
+    .weatherTitle{
+        width: auto;
+    }
+    
+    .weatherPara{
+        width: auto;
+    }
+    
+    .weatherLink{
+        width: auto;
+        font-size: 12px;
+    }
+
+    .pokemonPic{
+        width: 267px;
+        height: auto;
+    }
+
+    .weatherPic{
+        width: 267px;
+        height: auto;
+    }
+
+    .SerenityPic{
+        width: 267px;
+        height: auto;
+    }
+}
