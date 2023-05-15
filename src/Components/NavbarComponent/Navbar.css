@@ -35,6 +35,14 @@
     background-color: white;
 }
 
+.resume{
+    color: white !important;
+}
+
+.resume:hover{
+    color: grey !important;
+}
+
 @media screen and (max-width: 991px){
     .navBar{
         height: auto;

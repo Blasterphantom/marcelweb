@@ -1,10 +1,11 @@
 import React from 'react';
 import './Navbar.css';
-import { useNavigate } from "react-router-dom";
+import { useHref, useNavigate } from "react-router-dom";
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import logo from '../../Assets/MRLogo.png';
+import Resume from '../../Assets/RodriguezMResumeCodestack.pdf';
 
 export default function NavbarComponent() {
   let navigate = useNavigate();
@@ -21,6 +22,7 @@ export default function NavbarComponent() {
           <Nav.Link onClick={ () => {navigate("/")}}>Home</Nav.Link>
           <Nav.Link onClick={ () => {navigate("About")}}>About</Nav.Link>
           <Nav.Link onClick={ () => {navigate("Contact")}}>Contact</Nav.Link>
+          <Nav.Link className='resume' href={Resume} target='_blank'>Resume</Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Container>
