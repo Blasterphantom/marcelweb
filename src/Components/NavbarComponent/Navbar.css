@@ -1,5 +1,5 @@
 .navBar{
-    background-color: black;
+    background-color: #3C8A9D;
     height: 120px;
 }
 
@@ -13,11 +13,11 @@
 }
 
 .nav-link:hover{
-    color: grey;
+    color: black;
 }
 
 .nav-link:focus{
-    color: grey;
+    color: black;
 }
 
 .me-auto.navbar-nav{
@@ -28,11 +28,23 @@
 }
 
 .navbar-toggler.collapsed{
-    background-color: white;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
 }
 
 .navbar-toggler{
-    background-color: white;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+}
+
+.navbar-toggler.collapsed:focus{
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+}
+
+.navbar-toggler:focus{
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
 }
 
 .resume{
@@ -40,7 +52,7 @@
 }
 
 .resume:hover{
-    color: grey !important;
+    color: black !important;
 }
 
 @media screen and (max-width: 991px){

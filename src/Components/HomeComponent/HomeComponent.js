@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import "bootstrap/dist/css/bootstrap.min.css";
 import './Home.css';
 import { useNavigate } from "react-router-dom";
@@ -17,7 +17,7 @@ import ReactLogo from '../../Assets/ReactLogo.png';
 import Sql from '../../Assets/SQLLogo.png';
 import TailwindLogo from '../../Assets/TailwingLogo.png';
 import Ts from '../../Assets/TypescriptLogo.png';
-import Git from '../../Assets/GithubLogo.png';
+import Git from '../../Assets/GithubLogoBlack.png';
 import Slack from '../../Assets/SlackLogo.png';
 import Azure from '../../Assets/AzureLogo.png';
 import Figma from '../../Assets/FigmaLogo.png';
@@ -25,15 +25,67 @@ import Jira from '../../Assets/Jira.png';
 import Notion from '../../Assets/NotionLogo.png';
 import Postman from '../../Assets/PostmanLogo.png';
 
+function Typewriter({ textArray }) {
+  const [index, setIndex] = useState(0);
+  const [displayText, setDisplayText] = useState('');
+  const [isTyping, setIsTyping] = useState(true);
+  const [isPaused, setIsPaused] = useState(false);
+
+  useEffect(() => {
+    if (textArray.length === 0) return;
+
+    const typingSpeed = 200; // Typing speed in milliseconds
+    const backspaceSpeed = 100; // Backspace speed in milliseconds
+    const pauseAfterTyping = 1500; // Pause after typing a word before backspacing in milliseconds
+    const pauseBeforeNextWord = 1500; // Pause before typing next word
+
+    const interval = setInterval(() => {
+      if (isTyping) {
+        if (displayText === textArray[index]) {
+          setIsTyping(false);
+          setIsPaused(true);
+          setTimeout(() => {
+            setIsPaused(false);
+            setTimeout(() => {
+              setDisplayText('');
+              setIndex((prevIndex) => (prevIndex === textArray.length - 1 ? 0 : prevIndex + 1));
+              setIsTyping(true);
+            }, pauseBeforeNextWord);
+          }, pauseAfterTyping);
+        } else {
+          setDisplayText((prevText) => textArray[index].slice(0, prevText.length + 1));
+        }
+      } else {
+        if (displayText !== '') {
+          setTimeout(() => {
+            setDisplayText((prevText) => prevText.slice(0, -1));
+          }, backspaceSpeed); // Backspace speed
+        }
+      }
+    }, isTyping ? typingSpeed : backspaceSpeed);
+
+    // Clear interval when the component unmounts
+    return () => clearInterval(interval);
+  }, [index, textArray, displayText, isTyping]);
+
+  return (
+    <div className="typewriter-container">
+      <h2 className='heroTxt2'>{displayText}</h2>
+      <span className="blinking-cursor">|</span>
+    </div>
+  );
+}
 
 export default function HomeComponent() {
   let navigate = useNavigate();
+
+  const textArray = ['Software Engineer', 'Web Developer', 'Agular Developer', 'React Developer'];
 
   return (
     <Container className='homeContainer'>
       <div className='LuffyHome' >
         <h1 className='heroTxt'>Marcel Rodriguez</h1>
-        <h2 className='heroTxt2'>Software Engineer</h2>
+        <Typewriter textArray={textArray} />
       </div>
 
       <h2 className='portfolioTitle'>My Portfolio Showcase</h2>
