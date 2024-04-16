@@ -1,4 +1,7 @@
 import React, { useState, useEffect } from 'react';
+import Slider from 'react-slick';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import './Home.css';
 import { useNavigate } from "react-router-dom";
@@ -79,6 +82,17 @@ function Typewriter({ textArray }) {
 export default function HomeComponent() {
   let navigate = useNavigate();
 
+  const settings = {
+    className: "center",
+    centerMode: true,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    centerPadding: 0,
+    slidesToShow: 3,
+    speed: 500
+  };
+
   const textArray = ['Software Engineer', 'Web Developer', 'Angular Developer', 'React Developer'];
 
   return (
@@ -92,48 +106,50 @@ export default function HomeComponent() {
       <p className='portfolioTxt'>Since beginning my journey in the software engineering field, my dedication to the work and motivation to grow have led me to exceptional projects and experiences. I'm grateful for a profession I'm passionate about, and am proud to share examples of my greatest work.</p>
       <h2 className='portfolioTitle'>Languages/Frameworks</h2>
 
-      <Row className='langRow'>
-        <Col className='imgCol'>
+      <div className='slider-container'>
+      <Slider {...settings} className='langRow'>
+        <div className='imgSlideCol'>
         <img className='logoSize' src={Html} alt='Html'/>
         <p className='imgTxt'>HTML</p>
-        </Col>
-        <Col className='imgCol'>
+        </div>
+        <div className='imgSlideCol'>
         <img className='logoSize' src={css} alt='Css'/>
         <p className='imgTxt'>CSS</p>
-        </Col>
-        <Col className='imgCol'>
+        </div>
+        <div className='imgSlideCol'>
         <img className='logoSize' src={Js} alt='Js'/>
         <p className='imgTxt'>Javascript</p>
-        </Col>
-        <Col className='imgCol'>
+        </div>
+        <div className='imgSlideCol'>
         <img className='logoSize' src={Ts} alt='Ts'/>
         <p className='imgTxt'>Typescript</p>
-        </Col>
-        <Col className='imgCol'>
+        </div>
+        <div className='imgSlideCol'>
         <img className='logoSize' src={BootstrapLogo} alt='Bootstrap'/>
         <p className='imgTxt'>Bootstrap</p>
-        </Col>
-        <Col className='imgCol'>
+        </div>
+        <div className='imgSlideCol'>
         <img className='logoSize' src={TailwindLogo} alt='Tailwind'/>
         <p className='imgTxt'>TailwindCSS</p>
-        </Col>
-        <Col className='imgCol'>
+        </div>
+        <div className='imgSlideCol'>
         <img className='logoSize' src={ReactLogo} alt='React'/>
         <p className='imgTxt'>React/Native</p>
-        </Col>
-        <Col className='imgCol'>
+        </div>
+        <div className='imgSlideCol'>
         <img className='logoSize' src={Angular} alt='Angular'/>
         <p className='imgTxt'>Angular/Ionic</p>
-        </Col>
-        <Col className='imgCol'>
+        </div>
+        <div className='imgSlideCol'>
         <img className='logoSize' src={CLogo} alt='C'/>
         <p className='imgTxt'>C#</p>
-        </Col>
-        <Col className='imgCol'>
+        </div>
+        <div className='imgSlideCol'>
         <img className='logoSize' src={Sql} alt='Sql'/>
         <p className='imgTxt'>SQL</p>
-        </Col>
-      </Row>
+        </div>
+      </Slider>
+      </div>
 
       <h2 className='portfolioTitle'>Productivity</h2>
 
