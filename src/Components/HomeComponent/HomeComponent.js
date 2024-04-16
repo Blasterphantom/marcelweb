@@ -107,82 +107,84 @@ export default function HomeComponent() {
       <h2 className='portfolioTitle'>Languages/Frameworks</h2>
 
       <div className='slider-container'>
-      <Slider {...settings} className='langRow'>
-        <div className='imgSlideCol'>
-        <img className='logoSize' src={Html} alt='Html'/>
-        <p className='imgTxt'>HTML</p>
-        </div>
-        <div className='imgSlideCol'>
-        <img className='logoSize' src={css} alt='Css'/>
-        <p className='imgTxt'>CSS</p>
-        </div>
-        <div className='imgSlideCol'>
-        <img className='logoSize' src={Js} alt='Js'/>
-        <p className='imgTxt'>Javascript</p>
-        </div>
-        <div className='imgSlideCol'>
-        <img className='logoSize' src={Ts} alt='Ts'/>
-        <p className='imgTxt'>Typescript</p>
-        </div>
-        <div className='imgSlideCol'>
-        <img className='logoSize' src={BootstrapLogo} alt='Bootstrap'/>
-        <p className='imgTxt'>Bootstrap</p>
-        </div>
-        <div className='imgSlideCol'>
-        <img className='logoSize' src={TailwindLogo} alt='Tailwind'/>
-        <p className='imgTxt'>TailwindCSS</p>
-        </div>
-        <div className='imgSlideCol'>
-        <img className='logoSize' src={ReactLogo} alt='React'/>
-        <p className='imgTxt'>React/Native</p>
-        </div>
-        <div className='imgSlideCol'>
-        <img className='logoSize' src={Angular} alt='Angular'/>
-        <p className='imgTxt'>Angular/Ionic</p>
-        </div>
-        <div className='imgSlideCol'>
-        <img className='logoSize' src={CLogo} alt='C'/>
-        <p className='imgTxt'>C#</p>
-        </div>
-        <div className='imgSlideCol'>
-        <img className='logoSize' src={Sql} alt='Sql'/>
-        <p className='imgTxt'>SQL</p>
-        </div>
-      </Slider>
+        <Slider {...settings} className='langRow'>
+          <div className='imgSlideCol'>
+          <img className='logoSize' src={Html} alt='Html'/>
+          <p className='imgTxt'>HTML</p>
+          </div>
+          <div className='imgSlideCol'>
+          <img className='logoSize' src={css} alt='Css'/>
+          <p className='imgTxt'>CSS</p>
+          </div>
+          <div className='imgSlideCol'>
+          <img className='logoSize' src={Js} alt='Js'/>
+          <p className='imgTxt'>Javascript</p>
+          </div>
+          <div className='imgSlideCol'>
+          <img className='logoSize' src={Ts} alt='Ts'/>
+          <p className='imgTxt'>Typescript</p>
+          </div>
+          <div className='imgSlideCol'>
+          <img className='logoSize' src={BootstrapLogo} alt='Bootstrap'/>
+          <p className='imgTxt'>Bootstrap</p>
+          </div>
+          <div className='imgSlideCol'>
+          <img className='logoSize' src={TailwindLogo} alt='Tailwind'/>
+          <p className='imgTxt'>TailwindCSS</p>
+          </div>
+          <div className='imgSlideCol'>
+          <img className='logoSize' src={ReactLogo} alt='React'/>
+          <p className='imgTxt'>React/Native</p>
+          </div>
+          <div className='imgSlideCol'>
+          <img className='logoSize' src={Angular} alt='Angular'/>
+          <p className='imgTxt'>Angular/Ionic</p>
+          </div>
+          <div className='imgSlideCol'>
+          <img className='logoSize' src={CLogo} alt='C'/>
+          <p className='imgTxt'>C#</p>
+          </div>
+          <div className='imgSlideCol'>
+          <img className='logoSize' src={Sql} alt='Sql'/>
+          <p className='imgTxt'>SQL</p>
+          </div>
+        </Slider>
       </div>
 
       <h2 className='portfolioTitle'>Productivity</h2>
 
-      <Row className='langRow'>
-        <Col className='imgCol'>
-        <img className='logoSize' src={Git} alt='Git'/>
-        <p className='imgTxt'>Github</p>
-        </Col>
-        <Col className='imgCol'>
-        <img className='logoSize' src={Notion} alt='Notion'/>
-        <p className='imgTxt'>Notion</p>
-        </Col>
-        <Col className='imgCol'>
-        <img className='logoSize' src={Slack} alt='Slack'/>
-        <p className='imgTxt'>Slack</p>
-        </Col>
-        <Col className='imgCol'>
-        <img className='logoSize' src={Figma} alt='Figma'/>
-        <p className='imgTxt'>Figma</p>
-        </Col>
-        <Col className='imgCol'>
-        <img className='logoSize' src={Jira} alt='Jira'/>
-        <p className='imgTxt'>Jira</p>
-        </Col>
-        <Col className='imgCol'>
-        <img className='logoSize' src={Postman} alt='Postman'/>
-        <p className='imgTxt'>Postman</p>
-        </Col>
-        <Col className='imgCol'>
-        <img className='logoSize' src={Azure} alt='Azure'/>
-        <p className='imgTxt'>Azure</p>
-        </Col>
-      </Row>
+        <div className='slider-container'>
+          <Slider {...settings} className='langRow'>
+            <div className='imgSlideCol'>
+            <img className='logoSize' src={Git} alt='Git'/>
+            <p className='imgTxt'>Github</p>
+            </div>
+            <div className='imgSlideCol'>
+            <img className='logoSize' src={Notion} alt='Notion'/>
+            <p className='imgTxt'>Notion</p>
+            </div>
+            <div className='imgSlideCol'>
+            <img className='logoSize' src={Slack} alt='Slack'/>
+            <p className='imgTxt'>Slack</p>
+            </div>
+            <div className='imgSlideCol'>
+            <img className='logoSize' src={Figma} alt='Figma'/>
+            <p className='imgTxt'>Figma</p>
+            </div>
+            <div className='imgSlideCol'>
+            <img className='logoSize' src={Jira} alt='Jira'/>
+            <p className='imgTxt'>Jira</p>
+            </div>
+            <div className='imgSlideCol'>
+            <img className='logoSize' src={Postman} alt='Postman'/>
+            <p className='imgTxt'>Postman</p>
+            </div>
+            <div className='imgSlideCol'>
+            <img className='logoSize' src={Azure} alt='Azure'/>
+            <p className='imgTxt'>Azure</p>
+            </div>
+          </Slider>
+        </div>
 
       <Row className='rowLearn'>
         <Button className='learnMoreBtn' onClick={ () => {navigate("About")}}>Learn More</Button>
