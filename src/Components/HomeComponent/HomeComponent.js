@@ -79,7 +79,7 @@ function Typewriter({ textArray }) {
 export default function HomeComponent() {
   let navigate = useNavigate();
 
-  const textArray = ['Software Engineer', 'Web Developer', 'Agular Developer', 'React Developer'];
+  const textArray = ['Software Engineer', 'Web Developer', 'Angular Developer', 'React Developer'];
 
   return (
     <Container className='homeContainer'>
