@@ -5,6 +5,7 @@ import '../About/About.css';
 export default function About() {
   return (
     <div className='aboutMe'>
+        <div className="overlay"></div>
         <h1 className='titleAbout'>ABOUT ME</h1>
         <h2 className='subTitleAbout'>My Story</h2>
         <div className='paragraphAboutDiv'>

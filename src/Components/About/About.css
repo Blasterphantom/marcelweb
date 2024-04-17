@@ -9,16 +9,28 @@
 }
 
 .aboutMe{
-    height: 740px;
+    height: calc(100vh - 295px);
     width: auto;
     background-image: url(../../Assets/luffy.jpeg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    filter: grayscale(20%) contrast(120%) !important;
     display: flex;
     flex-direction: column;
     align-items: center;
+    z-index: -100;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.219);
+    z-index: -99;
 }
 
 .titleAbout{
@@ -51,19 +63,23 @@
 .paragraphAbout{
     font-family: Avenir;
     font-size: 15px;
+    font-weight: 500;
     text-align: center;
     color: white;
     width: 530px;
     height: auto;
     margin: 0;
     line-height: 1.88;
+    background-color: rgba(92, 92, 92, 0.976);
+    padding: 20px;
+    border-radius: 12px;
 }
 
 .paragraphAboutDiv{
     width: 100%;
     display: flex;
-    padding-top: 10.5%;
-    padding-left: 10%;
+    justify-content: center;
+    padding-top: 6.5%;
 }
 
 @media screen and (max-width: 768px){
