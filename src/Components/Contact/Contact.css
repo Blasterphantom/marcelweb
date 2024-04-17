@@ -9,12 +9,13 @@
 }
 
 .contactDiv{
-    height: 740px;
+    height: calc(100vh - 295px);
     width: 100%;
     background-color: #3C8A9D;
     display: flex;
     justify-content: center;
     align-items: center;
+    border: none !important;
 }
 
 .infoDiv{
