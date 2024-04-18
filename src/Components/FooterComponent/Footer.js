@@ -21,7 +21,7 @@ export default function Footer() {
           <img className='footImg' src={Github} alt='github' />
           </a>
         </Row>
-        <p className='copyright'>©2023 by marcelrodriguezcoding. Proudly created by Marcel Rodriguez</p>
+        <p className='copyright'>©2024 by marcelrodriguezcoding. Proudly created by Marcel Rodriguez</p>
     </Container>
   )
 }
