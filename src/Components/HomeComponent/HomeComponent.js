@@ -200,7 +200,7 @@ export default function HomeComponent() {
             <p className='pokeLanguage'><strong>Back End</strong>: C#, SQL</p>
             <p className='pokePara'>Mental health app built on React with typescript that helps a user with mental health by providing resources and daily check ins with a journaling feature. 3 person team with contributions including map functionality and database tables. Google maps API and Spotify API implemented.</p>
             <div className='buttonRow'>
-              <Button className='buttonTxt' href='https://serenitymentalhealth.azurewebsites.net/' target='_blank'>Project</Button>
+              <Button className='buttonTxt' href='https://serenityhealth.vercel.app/' target='_blank'>Project</Button>
             </div>
           </div>
         </Row>
