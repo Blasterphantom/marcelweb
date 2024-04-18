@@ -21,6 +21,7 @@
     flex-direction: column;
     align-items: center;
     z-index: -100;
+    overflow-y: scroll;
 }
 
 .overlay {
@@ -31,6 +32,10 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.219);
     z-index: -99;
+}
+
+.infoDivAbout {
+    height: auto;
 }
 
 .titleAbout{
@@ -80,6 +85,7 @@
     display: flex;
     justify-content: center;
     padding-top: 6.5%;
+    padding-bottom: 50px;
 }
 
 @media screen and (max-width: 768px){
@@ -88,7 +94,7 @@
     }
 
     .aboutMe{
-        height: 1000px;
+        height: auto;
     }
 }
 
