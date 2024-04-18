@@ -2,6 +2,7 @@
     font-family: Avenir;
     src: url(../../Assets/AvenirLight/Avenir-Light.ttf);
 }
+/* fix */
 
 .footerContainer.container{
     max-width: 100%;
