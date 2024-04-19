@@ -17,6 +17,10 @@ jobs:
         shell: powershell
 
     steps:
+      - name: Upgrade Node.js to v20
+        run: |
+          choco upgrade nodejs -y --version=20.0.0
+
       - name: Use Node.js 20.x
         uses: actions/setup-node@v2
         with:
@@ -52,6 +56,10 @@ jobs:
       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
 
     steps:
+      - name: Upgrade Node.js to v20
+        run: |
+          choco upgrade nodejs -y --version=20.0.0
+
       - name: Use Node.js 20.x
         uses: actions/setup-node@v2
         with:
