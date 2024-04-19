@@ -9,6 +9,10 @@ import Container from 'react-bootstrap/Container';
 import { Button, Col, Row } from 'react-bootstrap';
 import pokemon from '../../Assets/pokemon.png';
 import weather from '../../Assets/weather.png';
+import focus from '../../Assets/ProjectScreenshots/FOCUSLogin.png';
+import focusZoomed from '../../Assets/ProjectScreenshots/FOCUSLoginZoomed.png';
+import focusDash from '../../Assets/ProjectScreenshots/FOCUSDashboard.png';
+import focusDashZoomed from '../../Assets/ProjectScreenshots/FOCUSDashboardZoomed.png';
 import Serenity from '../../Assets/Serenity.png';
 import Angular from '../../Assets/AngularLogo.png';
 import BootstrapLogo from '../../Assets/BootstrapLogo.png';
@@ -207,14 +211,14 @@ export default function HomeComponent() {
 
         <Row className='project1 project2'>
           <div className='colHa'>
-            <h1 className='weatherTitle center'>Weather App</h1>
-            <p className='pokeLanguage'><strong>Front End</strong>: React - Javascript, HTML, CSS</p>
-            <p className='weatherPara'>This application is built on React with Javascript and uses a pokemon api to search any pokemon based off of name and returns the pokemon’s sprite along with info such as moves, location, and abilities. Can also favorite pokemon.</p>
+            <h1 className='weatherTitle center'>FOCUS App</h1>
+            <p className='pokeLanguage'><strong>Front End</strong>: Angular - Typescript, HTML, SCSS</p>
+            <p className='weatherPara'>This application is built on Angular with Typescript and uses tables anf forms to allow first responders to make and review reports of student crisis incidents. Login Functionality with different levels of user access and permissions. Internship Project built by team of fellow colleagues.</p>
             <div className='buttonRow'>
-              <Button className='buttonTxt' href='https://rodriguezmweatherreact.azurewebsites.net/' target='_blank'>Project</Button>
+              <Button className='buttonTxt' disabled='true' href='https://rodriguezmweatherreact.azurewebsites.net/' target='_blank'>Project</Button>
             </div>
           </div>
-          <img className='weatherPic' src={weather} alt='weather' />
+          <img className='weatherPic' src={focusZoomed} alt='focusLogin' />
         </Row>
 
         <Row className='project1'>
@@ -224,7 +228,7 @@ export default function HomeComponent() {
             <p className='pokeLanguage'><strong>Front End</strong>: React - Javascript, HTML, CSS</p>
             <p className='pokePara'>This application uses a pokemon api to search any pokemon based off of name and returns the pokemon’s sprite along with info such as moves, location, and abilities. Can also favorite pokemon. Project was built with Tailwind and Javascript, and later rebuilt in React. All information and pictures are fetched with an api on search, and use states are implemented for changing data.</p>
             <div className='buttonRow'>
-              <Button className='buttonTxt' href='https://vercel.com/blasterphantoms-projects/pokereact-y1ok' target='_blank'>Project</Button>
+              <Button className='buttonTxt' href='https://pokereact-theta.vercel.app/' target='_blank'>Project</Button>
             </div>
           </div>
         </Row>
