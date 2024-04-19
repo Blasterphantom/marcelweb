@@ -6,13 +6,13 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import './Home.css';
 import { useNavigate } from "react-router-dom";
 import Container from 'react-bootstrap/Container';
-import { Button, Col, Row } from 'react-bootstrap';
+import { Button, Row } from 'react-bootstrap';
 import pokemon from '../../Assets/pokemon.png';
-import weather from '../../Assets/weather.png';
-import focus from '../../Assets/ProjectScreenshots/FOCUSLogin.png';
+// import weather from '../../Assets/weather.png';
+// import focus from '../../Assets/ProjectScreenshots/FOCUSLogin.png';
 import focusZoomed from '../../Assets/ProjectScreenshots/FOCUSLoginZoomed.png';
-import focusDash from '../../Assets/ProjectScreenshots/FOCUSDashboard.png';
-import focusDashZoomed from '../../Assets/ProjectScreenshots/FOCUSDashboardZoomed.png';
+// import focusDash from '../../Assets/ProjectScreenshots/FOCUSDashboard.png';
+// import focusDashZoomed from '../../Assets/ProjectScreenshots/FOCUSDashboardZoomed.png';
 import Serenity from '../../Assets/Serenity.png';
 import Angular from '../../Assets/AngularLogo.png';
 import BootstrapLogo from '../../Assets/BootstrapLogo.png';
@@ -45,6 +45,7 @@ function Typewriter({ textArray }) {
     const backspaceSpeed = 100; // Backspace speed in milliseconds
     const pauseAfterTyping = 1500; // Pause after typing a word before backspacing in milliseconds
     const pauseBeforeNextWord = 1500; // Pause before typing next word
+    console.log(isPaused);
 
     const interval = setInterval(() => {
       if (isTyping) {
@@ -204,7 +205,7 @@ export default function HomeComponent() {
             <p className='pokeLanguage'><strong>Back End</strong>: C#, SQL</p>
             <p className='pokePara'>Mental health app built on React with typescript that helps a user with mental health by providing resources and daily check ins with a journaling feature. 3 person team with contributions including map functionality and database tables. Google maps API and Spotify API implemented.</p>
             <div className='buttonRow'>
-              <Button className='buttonTxt' href='https://serenityhealth.vercel.app/' target='_blank'>Project</Button>
+              <Button className='buttonTxt' href='https://serenityhealth.vercel.app/' target='_blank' rel="noopener noreferrer">Project</Button>
             </div>
           </div>
         </Row>
@@ -215,7 +216,7 @@ export default function HomeComponent() {
             <p className='pokeLanguage'><strong>Front End</strong>: Angular - Typescript, HTML, SCSS</p>
             <p className='weatherPara'>This application is built on Angular with Typescript and uses tables anf forms to allow first responders to make and review reports of student crisis incidents. Login Functionality with different levels of user access and permissions. Internship Project built by team of fellow colleagues.</p>
             <div className='buttonRow'>
-              <Button className='buttonTxt' disabled='true' href='https://rodriguezmweatherreact.azurewebsites.net/' target='_blank'>Project</Button>
+              <Button className='buttonTxt' disabled='true' href='https://rodriguezmweatherreact.azurewebsites.net/' target='_blank' rel="noopener noreferrer">Project</Button>
             </div>
           </div>
           <img className='weatherPic' src={focusZoomed} alt='focusLogin' />
@@ -228,7 +229,7 @@ export default function HomeComponent() {
             <p className='pokeLanguage'><strong>Front End</strong>: React - Javascript, HTML, CSS</p>
             <p className='pokePara'>This application uses a pokemon api to search any pokemon based off of name and returns the pokemon’s sprite along with info such as moves, location, and abilities. Can also favorite pokemon. Project was built with Tailwind and Javascript, and later rebuilt in React. All information and pictures are fetched with an api on search, and use states are implemented for changing data.</p>
             <div className='buttonRow'>
-              <Button className='buttonTxt' href='https://pokereact-theta.vercel.app/' target='_blank'>Project</Button>
+              <Button className='buttonTxt' href='https://pokereact-theta.vercel.app/' target='_blank' rel="noopener noreferrer">Project</Button>
             </div>
           </div>
         </Row>
