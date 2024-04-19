@@ -17,7 +17,7 @@ jobs:
         shell: powershell
 
     steps:
-      - name: Use Node.js 20.x
+      - name: Use node20
         uses: actions/setup-node@v4
 
       - name: Checkout code
