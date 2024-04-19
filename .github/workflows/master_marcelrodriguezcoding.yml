@@ -26,20 +26,3 @@ jobs:
 
       - name: Build React app
         run: $env:CI = "false"; npm run build
-
-  deploy:
-    runs-on: windows-latest
-    needs: build
-    environment:
-      name: 'Production'
-      url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
-
-    steps:
-      - name: Deploy to Azure Web App
-        id: deploy-to-webapp
-        uses: azure/webapps-deploy@v2
-        with:
-          app-name: 'MarcelRodriguezCoding'
-          slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_F57E292A2C5D4CD9A98073F6C034BB81 }}
-          package: .
