@@ -224,7 +224,7 @@ export default function HomeComponent() {
             <p className='pokeLanguage'><strong>Front End</strong>: React - Javascript, HTML, CSS</p>
             <p className='pokePara'>This application uses a pokemon api to search any pokemon based off of name and returns the pokemon’s sprite along with info such as moves, location, and abilities. Can also favorite pokemon. Project was built with Tailwind and Javascript, and later rebuilt in React. All information and pictures are fetched with an api on search, and use states are implemented for changing data.</p>
             <div className='buttonRow'>
-              <Button className='buttonTxt' href='https://pokemonapireact.azurewebsites.net' target='_blank'>Project</Button>
+              <Button className='buttonTxt' href='https://vercel.com/blasterphantoms-projects/pokereact-y1ok' target='_blank'>Project</Button>
             </div>
           </div>
         </Row>
