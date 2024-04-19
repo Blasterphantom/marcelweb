@@ -54,4 +54,4 @@ jobs:
           app-name: 'MarcelRodriguezCoding'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_F57E292A2C5D4CD9A98073F6C034BB81 }}
-          package: .
+          package: ${{ github.workspace }}/myapp
