@@ -31,6 +31,8 @@ import Figma from '../../Assets/FigmaLogo.png';
 import Jira from '../../Assets/Jira.png';
 import Notion from '../../Assets/NotionLogo.png';
 import Postman from '../../Assets/PostmanLogo.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
 function Typewriter({ textArray }) {
   const [index, setIndex] = useState(0);
@@ -86,6 +88,8 @@ function Typewriter({ textArray }) {
 
 export default function HomeComponent() {
   let navigate = useNavigate();
+  const [slider, setSlider] = useState(null);
+  const [slider2, setSlider2] = useState(null);
 
   const settings = {
     className: "center",
@@ -112,7 +116,7 @@ export default function HomeComponent() {
       <h2 className='portfolioTitle'>Languages/Frameworks</h2>
 
       <div className='slider-container'>
-        <Slider {...settings} className='langRow'>
+        <Slider ref={setSlider} {...settings} className='langRow'>
           <div className='imgSlideCol'>
           <img className='logoSize' src={Html} alt='Html'/>
           <p className='imgTxt'>HTML</p>
@@ -154,12 +158,18 @@ export default function HomeComponent() {
           <p className='imgTxt'>SQL</p>
           </div>
         </Slider>
+        <button className='prevButton' onClick={() => slider.slickPrev()}>
+          <FontAwesomeIcon icon={faChevronLeft} />
+        </button>
+        <button className='nextButton' onClick={() => slider.slickNext()}>
+          <FontAwesomeIcon icon={faChevronRight} />
+        </button>
       </div>
 
       <h2 className='portfolioTitle'>Productivity</h2>
 
         <div className='slider-container'>
-          <Slider {...settings} className='langRow'>
+          <Slider ref={setSlider2} {...settings} className='langRow'>
             <div className='imgSlideCol'>
             <img className='logoSize' src={Git} alt='Git'/>
             <p className='imgTxt'>Github</p>
@@ -189,6 +199,12 @@ export default function HomeComponent() {
             <p className='imgTxt'>Azure</p>
             </div>
           </Slider>
+          <button className='prevButton' onClick={() => slider2.slickPrev()}>
+            <FontAwesomeIcon icon={faChevronLeft} />
+          </button>
+          <button className='nextButton' onClick={() => slider2.slickNext()}>
+            <FontAwesomeIcon icon={faChevronRight} />
+          </button>
         </div>
 
       <Row className='rowLearn'>
