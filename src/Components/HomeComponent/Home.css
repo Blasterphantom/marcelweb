@@ -253,6 +253,7 @@
     padding: 0;
     width: 100%;
     display: flex;
+    padding-top: 40px;
     /* flex-direction: column;
     align-items: center; */
 }
@@ -287,7 +288,6 @@
 
 .pokeTitle{
     font-family: Raleway;
-    width: 347px;
     margin: 0;
     padding: 0;
     font-size: 50px;
@@ -298,7 +298,6 @@
 .pokePara{
     margin: 0;
     padding: 0;
-    width: 347px;
     color: white;
     font-size: 16px;
     margin-bottom: 10px;
@@ -325,12 +324,10 @@
 .weatherPara{
     margin: 0;
     padding: 0;
-    width: 347px;
     color: white;
     font-size: 16px;
     margin-bottom: 10px;
 }
-/* test */
 
 .weatherLink{
     margin: 0;
@@ -338,6 +335,23 @@
     width: 347px;
     color: white;
     font-size: 16px;
+}
+
+.projectCard {
+    margin-bottom: 40px;
+}
+
+.projectCard img {
+    width: 100%; /* Full width */
+    height: 300px; /* Height equal to the shortest image */
+    object-fit: cover; /* Cover the container without stretching */
+    object-position: top; /* Align the top of the image with the top of the container */
+}
+
+.btn-link-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .colHa{

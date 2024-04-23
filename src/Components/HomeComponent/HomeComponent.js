@@ -220,7 +220,9 @@ export default function HomeComponent() {
               <p className='pokeLanguage'><strong>Front End</strong>: React - Typescript, HTML, CSS</p>
               <p className='pokeLanguage'><strong>Back End</strong>: C#, SQL</p>
               <p className='pokePara'>Mental health app built on React with typescript that helps a user with mental health by providing resources and daily check ins with a journaling feature. 3 person team with contributions including map functionality and database tables. Google maps API and Spotify API implemented.</p>
-              <Button className='buttonTxt' href='https://serenityhealth.vercel.app/' target='_blank' rel="noopener noreferrer">Project</Button>
+              <div className='btn-link-div'>
+                <Button className='buttonTxt' href='https://serenityhealth.vercel.app/' target='_blank' rel="noopener noreferrer">Project</Button>
+              </div>
             </CardBody>
           </Card>
         </Col>
@@ -231,7 +233,9 @@ export default function HomeComponent() {
               <h1 className='weatherTitle center'>FOCUS App</h1>
               <p className='pokeLanguage'><strong>Front End</strong>: Angular - Typescript, HTML, SCSS</p>
               <p className='weatherPara'>This application is built on Angular with Typescript and uses tables anf forms to allow first responders to make and review reports of student crisis incidents. Login Functionality with different levels of user access and permissions. Internship Project built by team of fellow colleagues.</p>
-              <Button className='buttonTxt' disabled='true' href='https://rodriguezmweatherreact.azurewebsites.net/' target='_blank' rel="noopener noreferrer">Project</Button>
+              <div className='btn-link-div'>
+                <Button className='buttonTxt' disabled='true' href='https://rodriguezmweatherreact.azurewebsites.net/' target='_blank' rel="noopener noreferrer">Project</Button>
+              </div>
             </CardBody>
           </Card>
         </Col>
@@ -242,7 +246,9 @@ export default function HomeComponent() {
               <h1 className='pokeTitle center'>Pokemon API</h1>
               <p className='pokeLanguage'><strong>Front End</strong>: React - Javascript, HTML, CSS</p>
               <p className='pokePara'>This application uses a pokemon api to search any pokemon based off of name and returns the pokemon’s sprite along with info such as moves, location, and abilities. Can also favorite pokemon. Project was built with Tailwind and Javascript, and later rebuilt in React. All information and pictures are fetched with an api on search, and use states are implemented for changing data.</p>
-              <Button className='buttonTxt' href='https://pokereact-theta.vercel.app/' target='_blank' rel="noopener noreferrer">Project</Button>
+              <div className='btn-link-div'>
+                <Button className='buttonTxt' href='https://pokereact-theta.vercel.app/' target='_blank' rel="noopener noreferrer">Project</Button>
+              </div>
             </CardBody>
           </Card>
         </Col>
