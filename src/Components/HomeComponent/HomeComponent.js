@@ -6,7 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import './Home.css';
 import { useNavigate } from "react-router-dom";
 import Container from 'react-bootstrap/Container';
-import { Button, Col, Row } from 'react-bootstrap';
+import { Button, Row } from 'react-bootstrap';
 import pokemon from '../../Assets/pokemon.png';
 // import weather from '../../Assets/weather.png';
 // import focus from '../../Assets/ProjectScreenshots/FOCUSLogin.png';
@@ -31,6 +31,8 @@ import Figma from '../../Assets/FigmaLogo.png';
 import Jira from '../../Assets/Jira.png';
 import Notion from '../../Assets/NotionLogo.png';
 import Postman from '../../Assets/PostmanLogo.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
 function Typewriter({ textArray }) {
   const [index, setIndex] = useState(0);
@@ -45,6 +47,7 @@ function Typewriter({ textArray }) {
     const backspaceSpeed = 100; // Backspace speed in milliseconds
     const pauseAfterTyping = 1500; // Pause after typing a word before backspacing in milliseconds
     const pauseBeforeNextWord = 1500; // Pause before typing next word
+    console.log(isPaused);
 
     const interval = setInterval(() => {
       if (isTyping) {
@@ -85,6 +88,8 @@ function Typewriter({ textArray }) {
 
 export default function HomeComponent() {
   let navigate = useNavigate();
+  const [slider, setSlider] = useState(null);
+  const [slider2, setSlider2] = useState(null);
 
   const settings = {
     className: "center",
@@ -111,7 +116,7 @@ export default function HomeComponent() {
       <h2 className='portfolioTitle'>Languages/Frameworks</h2>
 
       <div className='slider-container'>
-        <Slider {...settings} className='langRow'>
+        <Slider ref={setSlider} {...settings} className='langRow'>
           <div className='imgSlideCol'>
           <img className='logoSize' src={Html} alt='Html'/>
           <p className='imgTxt'>HTML</p>
@@ -153,12 +158,18 @@ export default function HomeComponent() {
           <p className='imgTxt'>SQL</p>
           </div>
         </Slider>
+        <button className='prevButton' onClick={() => slider.slickPrev()}>
+          <FontAwesomeIcon icon={faChevronLeft} />
+        </button>
+        <button className='nextButton' onClick={() => slider.slickNext()}>
+          <FontAwesomeIcon icon={faChevronRight} />
+        </button>
       </div>
 
       <h2 className='portfolioTitle'>Productivity</h2>
 
         <div className='slider-container'>
-          <Slider {...settings} className='langRow'>
+          <Slider ref={setSlider2} {...settings} className='langRow'>
             <div className='imgSlideCol'>
             <img className='logoSize' src={Git} alt='Git'/>
             <p className='imgTxt'>Github</p>
@@ -188,6 +199,12 @@ export default function HomeComponent() {
             <p className='imgTxt'>Azure</p>
             </div>
           </Slider>
+          <button className='prevButton' onClick={() => slider2.slickPrev()}>
+            <FontAwesomeIcon icon={faChevronLeft} />
+          </button>
+          <button className='nextButton' onClick={() => slider2.slickNext()}>
+            <FontAwesomeIcon icon={faChevronRight} />
+          </button>
         </div>
 
       <Row className='rowLearn'>
@@ -204,7 +221,7 @@ export default function HomeComponent() {
             <p className='pokeLanguage'><strong>Back End</strong>: C#, SQL</p>
             <p className='pokePara'>Mental health app built on React with typescript that helps a user with mental health by providing resources and daily check ins with a journaling feature. 3 person team with contributions including map functionality and database tables. Google maps API and Spotify API implemented.</p>
             <div className='buttonRow'>
-              <Button className='buttonTxt' href='https://serenityhealth.vercel.app/' target='_blank'>Project</Button>
+              <Button className='buttonTxt' href='https://serenityhealth.vercel.app/' target='_blank' rel="noopener noreferrer">Project</Button>
             </div>
           </div>
         </Row>
@@ -215,7 +232,7 @@ export default function HomeComponent() {
             <p className='pokeLanguage'><strong>Front End</strong>: Angular - Typescript, HTML, SCSS</p>
             <p className='weatherPara'>This application is built on Angular with Typescript and uses tables anf forms to allow first responders to make and review reports of student crisis incidents. Login Functionality with different levels of user access and permissions. Internship Project built by team of fellow colleagues.</p>
             <div className='buttonRow'>
-              <Button className='buttonTxt' disabled='true' href='https://rodriguezmweatherreact.azurewebsites.net/' target='_blank'>Project</Button>
+              <Button className='buttonTxt' disabled='true' href='https://rodriguezmweatherreact.azurewebsites.net/' target='_blank' rel="noopener noreferrer">Project</Button>
             </div>
           </div>
           <img className='weatherPic' src={focusZoomed} alt='focusLogin' />
@@ -228,7 +245,7 @@ export default function HomeComponent() {
             <p className='pokeLanguage'><strong>Front End</strong>: React - Javascript, HTML, CSS</p>
             <p className='pokePara'>This application uses a pokemon api to search any pokemon based off of name and returns the pokemon’s sprite along with info such as moves, location, and abilities. Can also favorite pokemon. Project was built with Tailwind and Javascript, and later rebuilt in React. All information and pictures are fetched with an api on search, and use states are implemented for changing data.</p>
             <div className='buttonRow'>
-              <Button className='buttonTxt' href='https://pokereact-theta.vercel.app/' target='_blank'>Project</Button>
+              <Button className='buttonTxt' href='https://pokereact-theta.vercel.app/' target='_blank' rel="noopener noreferrer">Project</Button>
             </div>
           </div>
         </Row>
