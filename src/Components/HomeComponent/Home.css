@@ -247,6 +247,25 @@
     padding-bottom: 100px;
 }
 
+.projectTitleRow.row{
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #3C8A9D;;
+}
+
+.projectTitleText {
+    width: auto;
+    color: #fff;
+    font-family: Raleway;
+    font-size: 68px;
+    margin: 0;
+    padding: 100px 0;
+}
+
 .projectDiv{
     background-color: #3C8A9D;;
     margin: 0;
@@ -254,6 +273,21 @@
     width: 100%;
     display: flex;
     padding-top: 40px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+[class*="Col"] {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .projectTxt{
@@ -282,6 +316,7 @@
 
 .projectCard {
     background-color: black;
+    height: 100%;
 }
 
 .pokeTitle{
@@ -335,8 +370,15 @@
     font-size: 16px;
 }
 
+.card-img-top {
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+
 .projectCard {
     margin-bottom: 40px;
+    border: 3px solid white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
 }
 
 .projectCard img {
@@ -344,6 +386,10 @@
     height: 300px; /* Height equal to the shortest image */
     object-fit: cover; /* Cover the container without stretching */
     object-position: top; /* Align the top of the image with the top of the container */
+}
+
+.projectDiv .col-md-4 {
+    margin-bottom: 50px !important;
 }
 
 .btn-link-div {
