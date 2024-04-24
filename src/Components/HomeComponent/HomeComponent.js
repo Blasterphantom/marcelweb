@@ -6,7 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import './Home.css';
 import { useNavigate } from "react-router-dom";
 import Container from 'react-bootstrap/Container';
-import { Button, Row } from 'react-bootstrap';
+import { Button, Row, Col, Card, CardBody } from 'react-bootstrap';
 import pokemon from '../../Assets/pokemon.png';
 // import weather from '../../Assets/weather.png';
 // import focus from '../../Assets/ProjectScreenshots/FOCUSLogin.png';
@@ -211,48 +211,58 @@ export default function HomeComponent() {
         <Button className='learnMoreBtn' onClick={ () => {navigate("About")}}>Learn More</Button>
       </Row>
 
-      <div className='projectDiv'>
-        <h1 className='projectTxt'>Projects</h1>
-        <Row className='project1'>
-          <img className='SerenityPic' src={Serenity} alt='Serenity' />
-          <div className='colHa'>
-            <h1 className='pokeTitle center'>Serenity</h1>
-            <p className='pokeLanguage'><strong>Front End</strong>: React - Typescript, HTML, CSS</p>
-            <p className='pokeLanguage'><strong>Back End</strong>: C#, SQL</p>
-            <p className='pokePara'>Mental health app built on React with typescript that helps a user with mental health by providing resources and daily check ins with a journaling feature. 3 person team with contributions including map functionality and database tables. Google maps API and Spotify API implemented.</p>
-            <div className='buttonRow'>
-              <Button className='buttonTxt' href='https://serenityhealth.vercel.app/' target='_blank' rel="noopener noreferrer">Project</Button>
-            </div>
-          </div>
-        </Row>
+      <Row className='projectTitleRow'>
+        <h1 className='projectTitleText'>Projects</h1>
+      </Row>
 
-        <Row className='project1 project2'>
-          <div className='colHa'>
-            <h1 className='weatherTitle center'>FOCUS App</h1>
-            <p className='pokeLanguage'><strong>Front End</strong>: Angular - Typescript, HTML, SCSS</p>
-            <p className='weatherPara'>This application is built on Angular with Typescript and uses tables anf forms to allow first responders to make and review reports of student crisis incidents. Login Functionality with different levels of user access and permissions. Internship Project built by team of fellow colleagues.</p>
-            <div className='buttonRow'>
-              <Button className='buttonTxt' disabled='true' href='https://rodriguezmweatherreact.azurewebsites.net/' target='_blank' rel="noopener noreferrer">Project</Button>
-            </div>
-          </div>
-          <img className='weatherPic' src={focusZoomed} alt='focusLogin' />
-        </Row>
-
-        <Row className='project1'>
-          <img className='pokemonPic' src={pokemon} alt='pokemon' />
-          <div className='colHa'>
-            <h1 className='pokeTitle center'>Pokemon API</h1>
-            <p className='pokeLanguage'><strong>Front End</strong>: React - Javascript, HTML, CSS</p>
-            <p className='pokePara'>This application uses a pokemon api to search any pokemon based off of name and returns the pokemon’s sprite along with info such as moves, location, and abilities. Can also favorite pokemon. Project was built with Tailwind and Javascript, and later rebuilt in React. All information and pictures are fetched with an api on search, and use states are implemented for changing data.</p>
-            <div className='buttonRow'>
-              <Button className='buttonTxt' href='https://pokereact-theta.vercel.app/' target='_blank' rel="noopener noreferrer">Project</Button>
-            </div>
-          </div>
-        </Row>
-
-
-
-      </div>
+      <Row className='projectDiv'>
+        <Col md={4}>
+          <Card className='projectCard'>
+            <img className='SerenityPic card-img-top shortest-image' src={Serenity} alt='Serenity' />
+            <CardBody>
+              <div>
+                <h1 className='pokeTitle center'>Serenity</h1>
+                <p className='pokeLanguage'><strong>Front End</strong>: React - Typescript, HTML, CSS</p>
+                <p className='pokeLanguage'><strong>Back End</strong>: C#, SQL</p>
+                <p className='pokePara'>Mental health app built on React with typescript that helps a user with mental health by providing resources and daily check ins with a journaling feature. 3 person team with contributions including map functionality and database tables. Google maps API and Spotify API implemented.</p>
+              </div>
+              <div className='btn-link-div'>
+                <Button className='buttonTxt' href='https://serenityhealth.vercel.app/' target='_blank' rel="noopener noreferrer">Project</Button>
+              </div>
+            </CardBody>
+          </Card>
+        </Col>
+        <Col md={4}>
+          <Card className='projectCard'>
+            <img className='weatherPic card-img-top' src={focusZoomed} alt='focusLogin' />
+            <CardBody>
+              <div>
+                <h1 className='weatherTitle center'>FOCUS App</h1>
+                <p className='pokeLanguage'><strong>Front End</strong>: Angular - Typescript, HTML, SCSS</p>
+                <p className='weatherPara'>This application is built on Angular with Typescript and uses tables anf forms to allow first responders to make and review reports of student crisis incidents. Login Functionality with different levels of user access and permissions. Internship Project built by team of fellow colleagues.</p>
+              </div>
+              <div className='btn-link-div'>
+                <Button className='buttonTxt' disabled='true' href='https://rodriguezmweatherreact.azurewebsites.net/' target='_blank' rel="noopener noreferrer">Project</Button>
+              </div>
+            </CardBody>
+          </Card>
+        </Col>
+        <Col md={4}>
+          <Card className='projectCard'>
+            <img className='pokemonPic card-img-top' src={pokemon} alt='pokemon' />
+            <CardBody>
+              <div>
+                <h1 className='pokeTitle center'>Pokemon API</h1>
+                <p className='pokeLanguage'><strong>Front End</strong>: React - Javascript, HTML, CSS</p>
+                <p className='pokePara'>This application uses a pokemon api to search any pokemon based off of name and returns the pokemon’s sprite along with info such as moves, location, and abilities. Can also favorite pokemon. Project was built with Tailwind and Javascript, and later rebuilt in React. All information and pictures are fetched with an api on search, and use states are implemented for changing data.</p>
+              </div>
+              <div className='btn-link-div'>
+                <Button className='buttonTxt' href='https://pokereact-theta.vercel.app/' target='_blank' rel="noopener noreferrer">Project</Button>
+              </div>
+            </CardBody>
+          </Card>
+        </Col>
+      </Row>
 
     </Container>
   )

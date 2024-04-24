@@ -247,14 +247,47 @@
     padding-bottom: 100px;
 }
 
+.projectTitleRow.row{
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #3C8A9D;;
+}
+
+.projectTitleText {
+    width: auto;
+    color: #fff;
+    font-family: Raleway;
+    font-size: 68px;
+    margin: 0;
+    padding: 100px 0;
+}
+
 .projectDiv{
     background-color: #3C8A9D;;
     margin: 0;
     padding: 0;
     width: 100%;
     display: flex;
+    padding-top: 40px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+[class*="Col"] {
+    display: flex;
     flex-direction: column;
-    align-items: center;
+    flex: 1;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .projectTxt{
@@ -281,15 +314,13 @@
     margin-bottom: 50px;
 }
 
-.pokemonPic{
-    width: 267px;
-    height: 277px;
-    padding: 0;
+.projectCard {
+    background-color: black;
+    height: 100%;
 }
 
 .pokeTitle{
     font-family: Raleway;
-    width: 347px;
     margin: 0;
     padding: 0;
     font-size: 50px;
@@ -300,7 +331,6 @@
 .pokePara{
     margin: 0;
     padding: 0;
-    width: 347px;
     color: white;
     font-size: 16px;
     margin-bottom: 10px;
@@ -312,12 +342,6 @@
     width: 347px;
     color: white;
     font-size: 16px;
-}
-
-.weatherPic{
-    width: 347px;
-    height: auto;
-    padding: 0;
 }
 
 .weatherTitle{
@@ -333,7 +357,6 @@
 .weatherPara{
     margin: 0;
     padding: 0;
-    width: 347px;
     color: white;
     font-size: 16px;
     margin-bottom: 10px;
@@ -347,10 +370,32 @@
     font-size: 16px;
 }
 
-.SerenityPic{
-    width: 349px;
-    height: 255px;
-    padding: 0;
+.card-img-top {
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+
+.projectCard {
+    margin-bottom: 40px;
+    border: 3px solid white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+.projectCard img {
+    width: 100%; /* Full width */
+    height: 300px; /* Height equal to the shortest image */
+    object-fit: cover; /* Cover the container without stretching */
+    object-position: top; /* Align the top of the image with the top of the container */
+}
+
+.projectDiv .col-md-4 {
+    margin-bottom: 50px !important;
+}
+
+.btn-link-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .colHa{
