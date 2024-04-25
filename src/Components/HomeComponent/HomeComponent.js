@@ -47,7 +47,6 @@ function Typewriter({ textArray }) {
     const backspaceSpeed = 100; // Backspace speed in milliseconds
     const pauseAfterTyping = 1500; // Pause after typing a word before backspacing in milliseconds
     const pauseBeforeNextWord = 1500; // Pause before typing next word
-    console.log(isPaused);
 
     const interval = setInterval(() => {
       if (isTyping) {
@@ -84,6 +83,18 @@ function Typewriter({ textArray }) {
       <span className="blinking-cursor">|</span>
     </div>
   );
+}
+
+function handleCard1Click() {
+  console.log('Card 1 clicked! modal in progress');
+}
+
+function handleCard2Click() {
+  console.log('Card 2 clicked! modal in progress');
+}
+
+function handleCard3Click() {
+  console.log('Card 3 clicked! modal in progress');
 }
 
 export default function HomeComponent() {
@@ -217,7 +228,7 @@ export default function HomeComponent() {
 
       <Row className='projectDiv'>
         <Col md={4}>
-          <Card className='projectCard'>
+          <Card className='projectCard' onClick={handleCard1Click}>
             <img className='SerenityPic card-img-top shortest-image' src={Serenity} alt='Serenity' />
             <CardBody>
               <div>
@@ -233,7 +244,7 @@ export default function HomeComponent() {
           </Card>
         </Col>
         <Col md={4}>
-          <Card className='projectCard'>
+          <Card className='projectCard' onClick={handleCard2Click}>
             <img className='weatherPic card-img-top' src={focusZoomed} alt='focusLogin' />
             <CardBody>
               <div>
@@ -242,13 +253,13 @@ export default function HomeComponent() {
                 <p className='weatherPara'>This application is built on Angular with Typescript and uses tables anf forms to allow first responders to make and review reports of student crisis incidents. Login Functionality with different levels of user access and permissions. Internship Project built by team of fellow colleagues.</p>
               </div>
               <div className='btn-link-div'>
-                <Button className='buttonTxt' disabled='true' href='https://rodriguezmweatherreact.azurewebsites.net/' target='_blank' rel="noopener noreferrer">Project</Button>
+                <Button className='buttonTxt' disabled={true} href='https://rodriguezmweatherreact.azurewebsites.net/' target='_blank' rel="noopener noreferrer">Project</Button>
               </div>
             </CardBody>
           </Card>
         </Col>
         <Col md={4}>
-          <Card className='projectCard'>
+          <Card className='projectCard' onClick={handleCard3Click}>
             <img className='pokemonPic card-img-top' src={pokemon} alt='pokemon' />
             <CardBody>
               <div>
