@@ -1,6 +1,6 @@
 .modal-backdrop {
     position: fixed;
-    top: 0;
+    top: 1;
     left: 0;
     z-index: 1040;
     width: 100vw;
