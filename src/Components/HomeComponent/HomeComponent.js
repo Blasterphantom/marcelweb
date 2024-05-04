@@ -249,6 +249,7 @@ export default function HomeComponent() {
               <div>
                 <h1 className='weatherTitle center'>FOCUS App</h1>
                 <p className='pokeLanguage'><strong>Front End</strong>: Angular - Typescript, HTML, SCSS</p>
+                <p className='pokeLanguage'><strong>Back End</strong>: C#, SQL on Azure</p>
                 <p className='weatherPara'>This application is built on Angular with Typescript and uses tables anf forms to allow first responders to make and review reports of student crisis incidents. Login Functionality with different levels of user access and permissions. Internship Project built by team of fellow colleagues.</p>
               </div>
               <div className='btn-link-div'>
