@@ -11,8 +11,7 @@ import pokemon from '../../Assets/pokemon.png';
 // import weather from '../../Assets/weather.png';
 // import focus from '../../Assets/ProjectScreenshots/FOCUSLogin.png';
 import focusZoomed from '../../Assets/ProjectScreenshots/FOCUSLoginZoomed.png';
-// import focusDash from '../../Assets/ProjectScreenshots/FOCUSDashboard.png';
-// import focusDashZoomed from '../../Assets/ProjectScreenshots/FOCUSDashboardZoomed.png';
+import Cahcc from '../../Assets/ProjectScreenshots/CahccHome.png'
 import Serenity from '../../Assets/Serenity.png';
 import Angular from '../../Assets/AngularLogo.png';
 import BootstrapLogo from '../../Assets/BootstrapLogo.png';
@@ -234,7 +233,7 @@ export default function HomeComponent() {
               <div>
                 <h1 className='pokeTitle center'>Serenity</h1>
                 <p className='pokeLanguage'><strong>Front End</strong>: React - Typescript, HTML, CSS</p>
-                <p className='pokeLanguage'><strong>Back End</strong>: C#, SQL</p>
+                <p className='pokeLanguage'><strong>Back End</strong>: C#, SQL on Azure</p>
                 <p className='pokePara'>Mental health app built on React with typescript that helps a user with mental health by providing resources and daily check ins with a journaling feature. 3 person team with contributions including map functionality and database tables. Google maps API and Spotify API implemented.</p>
               </div>
               <div className='btn-link-div'>
@@ -266,6 +265,22 @@ export default function HomeComponent() {
                 <h1 className='pokeTitle center'>Pokemon API</h1>
                 <p className='pokeLanguage'><strong>Front End</strong>: React - Javascript, HTML, CSS</p>
                 <p className='pokePara'>This application uses a pokemon api to search any pokemon based off of name and returns the pokemon’s sprite along with info such as moves, location, and abilities. Can also favorite pokemon. Project was built with Tailwind and Javascript, and later rebuilt in React. All information and pictures are fetched with an api on search, and use states are implemented for changing data.</p>
+              </div>
+              <div className='btn-link-div'>
+                <Button className='buttonTxt' href='https://pokereact-theta.vercel.app/' target='_blank' rel="noopener noreferrer">Project</Button>
+              </div>
+            </CardBody>
+          </Card>
+        </Col>
+        <Col className='projectCol'>
+          <Card className='projectCard' onClick={handleCard3Click}>
+            <img className='pokemonPic card-img-top' src={Cahcc} alt='Cahcc' />
+            <CardBody>
+              <div>
+                <h1 className='pokeTitle center'>California Hispanic Chambers of Commerce</h1>
+                <p className='pokeLanguage'><strong>Front End</strong>: Angular - Typescript, HTML, SCSS</p>
+                <p className='pokeLanguage'><strong>Back End</strong>: C#, SQL on Azure</p>
+                <p className='pokePara'>The California Hispanic Chambers of Commerce (Cahcc) is a website used to share events and information to the community. Built on Angular, the interface includes a public side and an admin side implementing a CMS for the clients to update information dynamically. Worked on updating the CMS form uploads and editing the style of the public side.</p>
               </div>
               <div className='btn-link-div'>
                 <Button className='buttonTxt' href='https://pokereact-theta.vercel.app/' target='_blank' rel="noopener noreferrer">Project</Button>
