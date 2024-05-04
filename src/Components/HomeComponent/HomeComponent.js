@@ -8,10 +8,9 @@ import { useNavigate } from "react-router-dom";
 import Container from 'react-bootstrap/Container';
 import { Button, Row, Col, Card, CardBody } from 'react-bootstrap';
 import pokemon from '../../Assets/pokemon.png';
-// import weather from '../../Assets/weather.png';
-// import focus from '../../Assets/ProjectScreenshots/FOCUSLogin.png';
 import focusZoomed from '../../Assets/ProjectScreenshots/FOCUSLoginZoomed.png';
-import Cahcc from '../../Assets/ProjectScreenshots/CahccHome.png'
+import Cahcc from '../../Assets/ProjectScreenshots/CahccHome.png';
+import CalCareer from '../../Assets/ProjectScreenshots/CalCareerHome.png';
 import Serenity from '../../Assets/Serenity.png';
 import Angular from '../../Assets/AngularLogo.png';
 import BootstrapLogo from '../../Assets/BootstrapLogo.png';
@@ -283,7 +282,23 @@ export default function HomeComponent() {
                 <p className='pokePara'>The California Hispanic Chambers of Commerce (Cahcc) is a website used to share events and information to the community. Built on Angular, the interface includes a public side and an admin side implementing a CMS for the clients to update information dynamically. Worked on updating the CMS form uploads and editing the style of the public side.</p>
               </div>
               <div className='btn-link-div'>
-                <Button className='buttonTxt' href='https://pokereact-theta.vercel.app/' target='_blank' rel="noopener noreferrer">Project</Button>
+                <Button className='buttonTxt' href='https://www.cahcc.com/' target='_blank' rel="noopener noreferrer">Project</Button>
+              </div>
+            </CardBody>
+          </Card>
+        </Col>
+        <Col className='projectCol'>
+          <Card className='projectCard' onClick={handleCard3Click}>
+            <img className='pokemonPic card-img-top' src={CalCareer} alt='Cal Career' />
+            <CardBody>
+              <div>
+                <h1 className='pokeTitle center'>California Career Center</h1>
+                <p className='pokeLanguage'><strong>Front End</strong>: Angular - Typescript, HTML, SCSS</p>
+                <p className='pokeLanguage'><strong>Back End</strong>: C#, SQL on Azure</p>
+                <p className='pokePara'>The California Career Center application	is used by students and educators in order to prepare incoming workforce personal for the application process. Built on Angular, the interface includes a public side and an admin side implementing a CMS for the clients to update information dynamically. Worked on Implementing form interceptors to confirm unsaved changes, update form submission functionality site wide, and updated the search features as well as user management on the admin side.</p>
+              </div>
+              <div className='btn-link-div'>
+                <Button className='buttonTxt' href='https://www.calcareercenter.org/' target='_blank' rel="noopener noreferrer">Project</Button>
               </div>
             </CardBody>
           </Card>
