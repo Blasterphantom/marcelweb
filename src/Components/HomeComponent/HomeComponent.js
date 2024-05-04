@@ -227,7 +227,7 @@ export default function HomeComponent() {
       </Row>
 
       <Row className='projectDiv'>
-        <Col md={4}>
+        <Col className='projectCol'>
           <Card className='projectCard' onClick={handleCard1Click}>
             <img className='SerenityPic card-img-top shortest-image' src={Serenity} alt='Serenity' />
             <CardBody>
@@ -243,7 +243,7 @@ export default function HomeComponent() {
             </CardBody>
           </Card>
         </Col>
-        <Col md={4}>
+        <Col className='projectCol'>
           <Card className='projectCard' onClick={handleCard2Click}>
             <img className='weatherPic card-img-top' src={focusZoomed} alt='focusLogin' />
             <CardBody>
@@ -258,7 +258,7 @@ export default function HomeComponent() {
             </CardBody>
           </Card>
         </Col>
-        <Col md={4}>
+        <Col className='projectCol'>
           <Card className='projectCard' onClick={handleCard3Click}>
             <img className='pokemonPic card-img-top' src={pokemon} alt='pokemon' />
             <CardBody>

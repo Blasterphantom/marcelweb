@@ -274,14 +274,17 @@
     display: flex;
     padding-top: 40px;
     flex-wrap: wrap;
-    justify-content: space-around;
-
+    justify-content: center;
 }
 
 [class*="Col"] {
     display: flex;
     flex-direction: column;
     flex: 1;
+}
+
+.projectCol {
+    align-items: center;
 }
 
 .card-body {
@@ -318,6 +321,7 @@
     background-color: black;
     height: 100%;
     transition: transform 0.3s, box-shadow 0.3s;
+    width: 400px;
 }
 
 .projectCard:hover {
