@@ -285,6 +285,7 @@
 
 .projectCol {
     align-items: center;
+    flex: 33%;
 }
 
 .card-body {
