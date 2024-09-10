@@ -21,7 +21,6 @@
     flex-direction: column;
     align-items: center;
     z-index: -100;
-    overflow-y: scroll;
 }
 
 .overlay {
@@ -90,7 +89,7 @@
 
 @media screen and (max-width: 768px){
     .paragraphAbout{
-        width: 300px;
+        width: 85%;
     }
 
     .aboutMe{

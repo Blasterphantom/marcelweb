@@ -23,21 +23,6 @@ export default function About() {
     };
   }, []);
 
-  useEffect(() => {
-    const infoDiv = document.querySelector('.infoDivAbout');
-    const overlay = document.querySelector('.overlay');
-    const pAboutDiv = document.querySelector('.paragraphAboutDiv');
-    const aboutMe = document.querySelector('.aboutMe');
-    
-    if (infoDiv && overlay && pAboutDiv && aboutMe) {
-      const pDivStyles = getComputedStyle(pAboutDiv);
-      overlay.style.padding = pDivStyles.padding;
-      const infoDivHeight = infoDiv.clientHeight;
-      const aboutMeHeight = aboutMe.clientHeight;
-      overlay.style.height = `${Math.max(infoDivHeight, aboutMeHeight)}px`;
-    }
-  }, [viewportDimensions]);
-
   return (
     <div className='aboutMe'>
         <div className="overlay"></div>
@@ -45,7 +30,13 @@ export default function About() {
         <h1 className='titleAbout'>ABOUT ME</h1>
         <h2 className='subTitleAbout'>My Story</h2>
         <div className='paragraphAboutDiv'>
-            <p className='paragraphAbout'>Since a young age, I have always been fascinated with computers. Knowing that I wanted to contribute to the world with the knowledge that I had, I decided to major in computer science at a university to better get a taste of what the tech world could offer. College was educational, however it still felt like I could learn more, so I took my leave for the moment. <br/><br/> Now I have enrolled in CodeStack Academy, which is a fast pace software engineering program that helps get one prepared for the jobs available in the real world. Here, I have learned so much more that I could've hoped for. While juggling school and a full time job at Dominos, I have become a junior software engineer ready to apply for internships and job opportunities.</p>
+          <p className='paragraphAbout'>
+              Since a young age, I’ve always been fascinated by computers and how they work. Knowing that I wanted to contribute to the world using technology, I initially pursued a major in computer science. Although college provided a solid foundation, I realized there was much more to explore, so I decided to pursue learning on my own terms. <br/><br/>
+              
+              I enrolled in CodeStack Academy, a fast-paced software engineering program designed to prepare developers for real-world challenges. During this time, while balancing school and a full-time job, I grew into a junior software engineer with a hunger for real-world experience. <br/><br/>
+              
+              Now, I work as a web developer for Codestack, an organization under the San Joaquin Office of Education, where I contribute to nationwide systems using technologies like Angular, React, SQL, and Razor pages. My journey has given me both the technical skills and the passion needed to tackle complex problems, and I’m ready to embrace new opportunities in the field.
+          </p>
         </div>
         </div>
     </div>
